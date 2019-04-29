@@ -1,0 +1,27 @@
+nav {
+    vertical-align: middle;
+    background-color: #fff;
+    padding: 40px;
+}
+nav a {
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+nav a:visited,
+a:link {
+    color: #91a9b4;
+}
+nav a:hover {
+    color: #039be5;
+}
+nav a.active {
+    color: #039be5;
+}
+
+form {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+}

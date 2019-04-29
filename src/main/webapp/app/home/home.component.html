@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md-3">
+    <!-- <div class="col-md-3">
         <span class="hipster img-fluid rounded"></span>
     </div>
     <div class="col-md-9">
@@ -37,5 +37,33 @@
         <p>
             <span jhiTranslate="home.like">If you like JHipster, don't forget to give us a star on</span> <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener" jhiTranslate="home.github">GitHub</a>!
         </p>
+    </div> -->
+    <div class="card-deck">
+      <div class="col-sm" *ngFor="let product of products" style="width: 300px; height: 300px;">
+        <!-- Card -->
+        <mdb-card>
+          <div class="view overlay waves-light" mdbWavesEffect>
+            <!-- Card img -->
+            <mdb-card-img [src]="'data:' + product.imageContentType + ';base64,' + product.image" alt="{{product.name}}"></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <mdb-card-body>
+            <!--Title-->
+            <mdb-card-title>
+              <h4>{{product.id}}</h4>
+            </mdb-card-title>
+      
+            <!--Text-->
+            <mdb-card-text> Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </mdb-card-text>
+      
+            <a href="#" mdbBtn color="primary" mdbWavesEffect>Button</a>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
     </div>
 </div>
